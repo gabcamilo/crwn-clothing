@@ -17,7 +17,7 @@ export class Directory extends Component {
 			<div className="directory-menu">
 				{
 					this.state.sections.map(({title, imageUrl, id, size})=>{
-						return <MenuItem title={title} imageUrl={imageUrl} key={id} size={size}/>
+						return <MenuItem title={title.toUpperCase()} imageUrl={imageUrl} key={id} size={size}/>
 					})
 				}
 			</div>
