@@ -17,7 +17,7 @@ export class Directory extends Component {
 			<div className="directory-menu">
 				{
 					this.state.sections.map(({id, ...otherSectionProps})=>{
-						return <MenuItem key={id} {...otherSectionProps}/>
+						return <MenuItem key={`munu-item-${id}`} {...otherSectionProps}/>
 					})
 				}
 			</div>
