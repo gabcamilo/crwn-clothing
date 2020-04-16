@@ -13,13 +13,13 @@ const config = {
 	measurementId: "G-3QM06ZR2CQ"
 };
 
-firebase.initializeApp(config)
+firebase.initializeApp(config);
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GoogleAuthProvider();
-provider.setCustomParameters({propmt: 'select_account'});
-export const signInWithGoogle = () =>auth.signInWithPopup(provider);
+provider.setCustomParameters({prompt: 'select_account'});
+export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
 export default firebase;
