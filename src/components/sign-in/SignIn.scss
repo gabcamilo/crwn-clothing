@@ -12,3 +12,14 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.custom-button {
+	flex: 1;
+}
+.left-button {
+	margin-right: 1vw;
+}
+
+.right-button {
+	margin-left: 1vw;
+}
