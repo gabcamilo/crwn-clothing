@@ -23,10 +23,10 @@ class App extends Component {
             id: snapShot.id,
             ...snapShot.data()
           });
-        })
+        });
       }
 
-      this.setState({userAuth})
+      setCurrentUser(userAuth);
     });
   }
 
